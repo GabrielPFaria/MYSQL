@@ -12,7 +12,7 @@ create table tb_marcas(
 
 );
 	insert into tb_marcas(nome, ativo) values("Nick", true);
-    insert into tb_marcas(nome, ativo) values("fatal surf", false);
+    insert into tb_marcas(nome, ativo) values("fatal surf", true);
     insert into tb_marcas(nome, ativo) values("H&H", true);
     insert into tb_marcas(nome, ativo) values("Zara", true);
     insert into tb_marcas(nome, ativo) values("Adidas", true);
@@ -34,15 +34,31 @@ id bigint auto_increment,
     foreign key (marca_id) references tb_marcas (id)
 );
 
-insert into tb_produtos(nome, preco, marca_id) values("",,);
-insert into tb_produtos(nome, preco, marca_id) values("",,);
-insert into tb_produtos(nome, preco, marca_id) values("",,);
-insert into tb_produtos(nome, preco, marca_id) values("",,);
-insert into tb_produtos(nome, preco, marca_id) values("",,);
-insert into tb_produtos(nome, preco, marca_id) values("",,);
+insert into tb_produtos(nome, preco, marca_id) values("Camisa",22.99,3);
+insert into tb_produtos(nome, preco, marca_id) values("Tenis",79.99,3);
+insert into tb_produtos(nome, preco, marca_id) values("Sapato",81.66,5);
+insert into tb_produtos(nome, preco, marca_id) values("Camisa",50.00,2);
+insert into tb_produtos(nome, preco, marca_id) values("Relogio",99.86,8);
+insert into tb_produtos(nome, preco, marca_id) values("Calça",30.99,6);
 
-	select * from tb_produtos;
+select * from tb_produtos;
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    select * from tb_produtos;
     select * from tb_marcas;
     
    
-
+truncate table tb_marcas;
+drop table tb_produtos;
